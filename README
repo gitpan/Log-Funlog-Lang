@@ -4,16 +4,16 @@ vim600: set textwidth=80:
 Log::Funlog::Lang - Language pack for Log::Funlog
 
 Gab
-korsani free fr
+korsani f.r.e.e f.r
 
  ,+---------------------------------- -  -   -    -     -
-( | Description
+( | What is it?
  `+---------------------------------- -  -   -    -     -
 
 Perl module that provide funny sentences for Log::Funlog.
 
  ,+---------------------------------- -  -   -    -     -
-( | Install
+( | Install it
  `+---------------------------------- -  -   -    -     -
 
 perl Makefile.PL
@@ -22,7 +22,7 @@ make
 sudo make install
 
  ,+---------------------------------- -  -   -    -     -
-( | Use
+( | Use it
  `+---------------------------------- -  -   -    -     -
 	
 	use Log::Funlog::Lang;

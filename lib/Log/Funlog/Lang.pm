@@ -27,6 +27,8 @@ Two-letters code specifying language to use.
 
 Available languages are: fr, en
 
+Default to 'en'.
+
 =back
 
 =head1 AUTHOR
@@ -49,7 +51,7 @@ BEGIN {
 	use Exporter;
 	@ISA=qw(Exporter);
 	@EXPORT=qw();
-	$VERSION='0.1';
+	$VERSION='0.2';
 }
 use strict;
 use Carp;
@@ -62,8 +64,11 @@ sub new {
 			$LC_MESSAGES=substr($ENV{'LC_MESSAGES'},0,2);
 		} elsif (exists $ENV{'LANG'}) {
 			$LC_MESSAGES=substr($ENV{'LANG'},0,2);
+		} else {
+			$LC_MESSAGES='en';
 		}
 	}
+	$LC_MESSAGES=lc($LC_MESSAGES);
 	if ($LC_MESSAGES eq 'fr' ) {
 		@fun=(
 			"-- this line will never be written --",
