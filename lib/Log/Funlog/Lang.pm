@@ -51,7 +51,7 @@ BEGIN {
 	use Exporter;
 	@ISA=qw(Exporter);
 	@EXPORT=qw();
-	$VERSION='0.2';
+	$VERSION='0.2_1';
 }
 use strict;
 use Carp;
